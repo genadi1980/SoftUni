@@ -1,0 +1,27 @@
+using System;
+
+namespace PersonalTitles	
+{
+	class PersonalTitles
+	{
+	
+		static void Main()
+		{
+			var age = double.Parse(Console.RightLine());
+			var gender = Console.RightLine();
+			
+			if (age < 16) 
+			{
+				if (gender == "m") Console.WriteLine("Master");
+				if (gender == "f") Console.WriteLine ("Miss");				
+			}
+			else
+			{
+				if (gender == "m") Console.WriteLine("Mr.");
+				if (gender == "f") Console.WriteLine ("Ms.");
+			}
+		}
+	
+	}
+
+}
