@@ -1,7 +1,0 @@
-Contains...
-1.Add first conflict
-2.Add second conflict
-3.Changes in the main brunch
-4.Brunch test
-
-
