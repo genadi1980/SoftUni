@@ -26,32 +26,26 @@ namespace _09LongerLine
 
         private static void GetClosedPointToZero(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4)
         {
-            double c1 = Math.Abs(Math.Sqrt(Math.Pow(x1, 2) + Math.Pow(y1, 2)));
-            double c2 = Math.Abs(Math.Sqrt(Math.Pow(x2, 2) + Math.Pow(y2, 2)));
-            double c3 = Math.Abs(Math.Sqrt(Math.Pow(x3, 2) + Math.Pow(y3, 2)));
-            double c4 = Math.Abs(Math.Sqrt(Math.Pow(x4, 2) + Math.Pow(y4, 2)));
+            double line1 = Math.Sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
+            double line2 = Math.Sqrt((x3 - x4) * (x3 - x4) + (y3 - y4) * (y3 - y4));
 
-            if (c1 < c3 && c1 < c4 && c2 < c3 && c2 < c4)
+            if (line1 >= line2)
             {
-                if (x4 < x3 && y4 < y3)
-                {
-                    Console.WriteLine($"({x3}, {y3})({x4}, {y4})");
-                }
-                else
-                {
-                    Console.WriteLine($"({x4}, {y4})({x3}, {y3})");
-                }
+                bool first = true;
+                if (Math.Sqrt(x1 * x1 + y1 * y1) > Math.Sqrt(x2 * x2 + y2 * y2))
+                    first = false;
+                if (first)
+                    Console.WriteLine($"({x1}, {y1})({x2}, {y2})");
+                else Console.WriteLine($"({x2}, {y2})({x1}, {y1})");
             }
             else
             {
-                if (x2 < x1 && y2 < y1)
-                {
-                    Console.WriteLine($"({x1}, {y1})({x2}, {y2})");
-                }
-                else
-                {
-                    Console.WriteLine($"({x2}, {y2})({x1}, {y1})");
-                }
+                bool first = true;
+                if (Math.Sqrt(x3 * x3 + y3 * y3) > Math.Sqrt(x4 * x4 + y4 * y4))
+                    first = false; 
+                if (first)
+                    Console.WriteLine($"({x3}, {y3})({x4}, {y4})");
+                else Console.WriteLine($"({x4}, {y4})({x3}, {y3})");
             }
         }
     }
