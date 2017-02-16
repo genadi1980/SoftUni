@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04SieveofEratosthenes", "04
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03FoldandSum", "03FoldandSum\03FoldandSum.csproj", "{C3B53ADC-8245-4417-AE20-719BD4ADAC8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01LargestElementinArray", "01LargestElementinArray\01LargestElementinArray.csproj", "{A8DE594D-EE0D-4E48-ADD8-D183707183D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C3B53ADC-8245-4417-AE20-719BD4ADAC8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3B53ADC-8245-4417-AE20-719BD4ADAC8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3B53ADC-8245-4417-AE20-719BD4ADAC8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8DE594D-EE0D-4E48-ADD8-D183707183D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8DE594D-EE0D-4E48-ADD8-D183707183D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8DE594D-EE0D-4E48-ADD8-D183707183D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8DE594D-EE0D-4E48-ADD8-D183707183D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
