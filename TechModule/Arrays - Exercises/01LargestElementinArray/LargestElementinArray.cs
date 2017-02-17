@@ -8,34 +8,21 @@ namespace _01LargestElementinArray
         static void Main()
         {
             var n = int.Parse(Console.ReadLine());
-            var maxNumber = 0;
             var arrayNumbers = new int[n];
+            int maxNumber = int.MinValue;
             
-            for (int i = 0; i < arrayNumbers.Length; i++)
+            for (int i = 0; i <= arrayNumbers.Length - 1; i++)
             {
                 var number = int.Parse(Console.ReadLine());
                 arrayNumbers[i] = number;
+                var temp = arrayNumbers[i];
+                if (maxNumber <= temp)
+                {
+                    maxNumber = temp;
+                }
                 
             }
-
-            for (int j = 1; j < arrayNumbers.Length; j++)
-            {
-                var previous = arrayNumbers[0];
-              
-                if (arrayNumbers[j] >= previous)
-                {
-                    maxNumber = arrayNumbers[j];
-                }
-                else
-                {
-                    maxNumber = previous;
-                }
-            }
-           
             Console.WriteLine(maxNumber);
-
-        }
-
-       
+        }       
     }
 }
