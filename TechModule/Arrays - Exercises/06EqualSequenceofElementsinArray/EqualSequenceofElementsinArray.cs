@@ -1,26 +1,30 @@
-﻿namespace _05IncreasingSequenceofElements
+﻿namespace _06EqualSequenceofElementsinArray
 {
     using System;
     using System.Linq;
-
-    class IncreasingSequenceofElements
+    
+    class EqualSequenceofElementsinArray
     {
         static void Main()
         {
             int[] arrayInput = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
-            bool isIncremental = true;
+            bool isEqual = true;
+            
 
             for (int i = 1; i < arrayInput.Length; i++)
             {
-                if (arrayInput[i] < arrayInput[i - 1])
+                if (arrayInput[i] == arrayInput[i-1])
                 {
-                    isIncremental = false;
+                    isEqual = true;
+                    
+                }
+                else
+                {
+                    isEqual = false;
                     break;
-                                  
-                }              
-
+                }
             }
-            if (isIncremental)
+            if (isEqual)
             {
                 Console.WriteLine("Yes");
             }
@@ -28,6 +32,7 @@
             {
                 Console.WriteLine("No");
             }
+   
         }
     }
 }
