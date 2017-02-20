@@ -1,11 +1,12 @@
-﻿namespace _3Phonebook
+﻿namespace _3PhonebookMyCode
 {
     using System;
+    using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
 
-    class Phonebook
+    class PhonebookMyCode
     {
         static void Main()
         {
@@ -23,23 +24,16 @@
                 enterName = Console.ReadLine();
                 if (enterName != "done")
                 {
-                    for (int row = 0; row < phoneNames.Length; row++)
-                        {
-                            if (enterName == phoneNames[row])
-                            {
-                                total = $"{phoneNames[row]} -> {phoneNumbers[row]}";
-                                Console.WriteLine(total);
-                            }
-                        }
-                    
+                    if (phoneNames.Contains(enterName))
+                    {
+                        int enteredNameIndex = Array.IndexOf(phoneNames, enterName);
+                        searchedNames[i] = $"{phoneNames[enteredNameIndex]} -> {phoneNumbers[enteredNameIndex]}";
+                        Console.WriteLine(searchedNames[i]);
+                    }
+
                 }
                 else break;
             }
-
-
-
         }
-
     }
-                                                               
 }

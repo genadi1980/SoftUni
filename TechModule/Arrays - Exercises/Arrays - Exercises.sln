@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2ArrayElementsEqualtoTheirI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3Phonebook", "3Phonebook\3Phonebook.csproj", "{619F4820-E9B2-430E-ADC0-48C9A5FDBD04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3PhonebookMyCode", "3PhonebookMyCode\3PhonebookMyCode.csproj", "{3A8E9B09-ECAC-48FB-AF46-20CD051C3399}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{619F4820-E9B2-430E-ADC0-48C9A5FDBD04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{619F4820-E9B2-430E-ADC0-48C9A5FDBD04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{619F4820-E9B2-430E-ADC0-48C9A5FDBD04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A8E9B09-ECAC-48FB-AF46-20CD051C3399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A8E9B09-ECAC-48FB-AF46-20CD051C3399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A8E9B09-ECAC-48FB-AF46-20CD051C3399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A8E9B09-ECAC-48FB-AF46-20CD051C3399}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
