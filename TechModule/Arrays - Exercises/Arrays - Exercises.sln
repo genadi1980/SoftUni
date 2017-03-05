@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3Phonebook", "3Phonebook\3P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3PhonebookMyCode", "3PhonebookMyCode\3PhonebookMyCode.csproj", "{3A8E9B09-ECAC-48FB-AF46-20CD051C3399}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04Phone", "04Phone\04Phone.csproj", "{658BDC48-A552-4930-B1D1-94643DA0970B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05CharRotation", "05CharRotation\05CharRotation.csproj", "{0D18BE98-A777-4A93-87B7-C743CBB253CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,14 @@ Global
 		{3A8E9B09-ECAC-48FB-AF46-20CD051C3399}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A8E9B09-ECAC-48FB-AF46-20CD051C3399}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A8E9B09-ECAC-48FB-AF46-20CD051C3399}.Release|Any CPU.Build.0 = Release|Any CPU
+		{658BDC48-A552-4930-B1D1-94643DA0970B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{658BDC48-A552-4930-B1D1-94643DA0970B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{658BDC48-A552-4930-B1D1-94643DA0970B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{658BDC48-A552-4930-B1D1-94643DA0970B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D18BE98-A777-4A93-87B7-C743CBB253CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D18BE98-A777-4A93-87B7-C743CBB253CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D18BE98-A777-4A93-87B7-C743CBB253CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D18BE98-A777-4A93-87B7-C743CBB253CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

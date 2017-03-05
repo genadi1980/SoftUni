@@ -1,9 +1,12 @@
-﻿namespace _3Phonebook
+﻿namespace _04Phone
 {
     using System;
+    using System.Collections.Generic;
     using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
 
-    class Phonebook
+    class Phone
     {
         static void Main()
         {
@@ -23,7 +26,16 @@
                     int enteredNameIndex = Array.IndexOf(phoneNames, enterName);
                     Console.WriteLine($"{phoneNames[enteredNameIndex]} -> {phoneNumbers[enteredNameIndex]}");
                 }
+                if (enterName == "call")
+                {
+                    if (phoneNames.Contains())
+                    {
+
+                    }
+                    int enteredNameIndex = Array.IndexOf(phoneNames, enterName);
+                    Console.WriteLine($"{phoneNames[enteredNameIndex]} -> {phoneNumbers[enteredNameIndex]}");
+                    Console.WriteLine("calling {0}", phoneNames);
+                }
             }
-        }
     }
 }
