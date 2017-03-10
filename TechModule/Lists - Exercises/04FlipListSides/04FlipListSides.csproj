@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{41834490-DC27-4B63-B7E1-CDF99AF522E7}</ProjectGuid>
+    <ProjectGuid>{9BE9F048-4359-4FFF-88EF-750B01E1AD29}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_06StuckZipper</RootNamespace>
-    <AssemblyName>06StuckZipper</AssemblyName>
+    <RootNamespace>_04FlipListSides</RootNamespace>
+    <AssemblyName>04FlipListSides</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StuckZipper.cs" />
+    <Compile Include="FlipListSides.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

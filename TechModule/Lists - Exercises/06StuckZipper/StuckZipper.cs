@@ -3,38 +3,44 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+    
 
     class Program
     {
         static void Main(string[] args)
         {
             var firstList = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
-            var secndList = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
+            var secondList = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
 
-            // Идеален брой цифри
-            var idealNumberOfDigits = CalculateIdealNumbeOfDigits(firstList, secndList);
+            
+            var idealNumberOfDigits = CalculateIdealNumbeOfDigits(firstList, secondList);
+            RemoveElements(firstList, idealNumberOfDigits);
+            RemoveElements(secondList, idealNumberOfDigits);
 
+            var insertionIndex = 1;
             for (int i = 0; i < firstList.Count; i++)
             {
-                var currentNumberOfDigits = CalculateNumberOfDigits(firstList[i]);
+                secondList.Insert(Math.Min(insertionIndex, secondList.Count), firstList[i]);
+                insertionIndex += 2;  
+            }
+
+            Console.WriteLine(string.Join(" ", secondList));
+        }
+
+         static void RemoveElements(List<int> List, int idealNumberOfDigits)
+        {
+            for (int i = 0; i < List.Count; i++)
+            {
+                var currentElement = List[i];
+                var currentNumberOfDigits = CalculateNumberOfDigits(currentElement);
                 if (currentNumberOfDigits > idealNumberOfDigits)
                 {
-                    firstList.RemoveAt(i);
+                    List.RemoveAt(i);
                     i--;
                 }
             }
 
-            for (int i = 0; i < secndList.Count; i++)
-            {
-                var currentNumberOfDigits = CalculateNumberOfDigits(secndList[i]);
-                if (currentNumberOfDigits > idealNumberOfDigits)
-                {
-                    secndList.RemoveAt(i);
-                    i--;
-                }
-            }
+            
         }
 
         private static int CalculateIdealNumbeOfDigits(List<int> firstList, List<int> secndList)
