@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06Winecraft", "06Winecraft\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05NoteStatistics", "05NoteStatistics\05NoteStatistics.csproj", "{F791F209-E89B-444D-8624-866953CAF2DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04Ununionlist", "04Ununionlist\04Ununionlist.csproj", "{A00EA43A-8B41-43BD-8448-4A21F85F656A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{F791F209-E89B-444D-8624-866953CAF2DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F791F209-E89B-444D-8624-866953CAF2DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F791F209-E89B-444D-8624-866953CAF2DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A00EA43A-8B41-43BD-8448-4A21F85F656A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A00EA43A-8B41-43BD-8448-4A21F85F656A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A00EA43A-8B41-43BD-8448-4A21F85F656A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A00EA43A-8B41-43BD-8448-4A21F85F656A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

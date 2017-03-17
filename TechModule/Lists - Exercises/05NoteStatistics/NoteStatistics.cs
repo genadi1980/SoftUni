@@ -38,6 +38,43 @@
             }
 
             Console.WriteLine("Notes: {0}", string.Join(" ", resultNotes));
+
+            var naturals = new List<string>();
+            var sharps = new List<string>();
+
+            foreach (var note in resultNotes)
+            {
+                if (note.Contains("#"))
+                {
+                    sharps.Add(note);
+                }
+                else
+                {
+                    naturals.Add(note);
+                }
+            }
+            Console.WriteLine("Naturals: {0}", string.Join(", ", naturals));
+            Console.WriteLine("Sharps: {0}", string.Join(", ", sharps));
+
+
+            var naturalsSum = GetNoteSum(notes, friquencies, naturals);
+            var sharpsSum = GetNoteSum(notes, friquencies, sharps);
+
+            Console.WriteLine($"Naturals sum: {naturalsSum}");
+            Console.WriteLine($"Sharps sum: {sharpsSum}");
+        }
+
+        static double GetNoteSum(List<string> allNotes, List<double> allFriquencies, List<string> notes)
+        {
+            var noteSum = 0d;
+
+            foreach (var note in notes)
+            {
+                var friquencyIndex = allNotes.IndexOf(note);
+                var friquency = allFriquencies[friquencyIndex];
+                noteSum += friquency;
+            }
+            return noteSum;
         }
     }
 }
