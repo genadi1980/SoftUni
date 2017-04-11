@@ -25,21 +25,30 @@
 
                 for (int i = 0; i < inputParam.Length - 1; i++)
                 {
-                    dictionary[location].Add(shells);
+                    if (!dictionary[location].Contains(shells))
+                    {
+                        dictionary[location].Add(shells);
+                    }
+                    
                 }
                 
 
                 inputLine = Console.ReadLine();
             }
 
-            foreach (var shells in dictionary)
+            foreach (var regionAndShells in dictionary)
             {
-                var location = shells.Key;
-                var shell = string.Join(", ", shells.Value);
-                var avarage = 
 
-                Console.WriteLine("{0} -> {1} ({2})", location, shell);
+                var location = regionAndShells.Key;
+                List<int> shell = regionAndShells.Value;
+
+                var avarage = Math.Ceiling(shell.Sum() - shell.Average());
+
+                Console.WriteLine("{0} -> {1} ({2})", location, string.Join(", ", regionAndShells.Value), avarage);
+                
             }
         }
+
+        
     }
 }
