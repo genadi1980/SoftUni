@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1699D966-7254-4EFA-A2A4-5CC9FA9C4F0F}</ProjectGuid>
+    <ProjectGuid>{C939D5FF-1AFB-48E8-B2A4-67E689C81841}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_04Roli_The_Coder</RootNamespace>
-    <AssemblyName>04Roli-The Coder</AssemblyName>
+    <RootNamespace>_01SoftuniCoffeeOrders</RootNamespace>
+    <AssemblyName>01SoftuniCoffeeOrders</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Roli-The Coder.cs" />
+    <Compile Include="SoftuniCoffeeOrders.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
