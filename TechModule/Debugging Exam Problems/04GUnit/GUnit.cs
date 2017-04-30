@@ -11,38 +11,38 @@
     {
         public static void Main()
         {
+            Regex validationRegex = new Regex(@"^([A-Z][a-zA-Z0-9]+)\s\|\s([A-Z][a-zA-Z0-9]+)\s\|\s([A-Z][a-zA-Z0-9]+)$");
+                                  
+            Dictionary<string, Dictionary<string, List<string>>> classes = new Dictionary<string, Dictionary<string, List<string>>>();
+
             var input = Console.ReadLine();
-
-            Regex regex = new Regex(@"^([A-Z][a-zA-Z0-9]+)\s\|\s([A-Z][a-zA-Z0-9]+)\s\|\s([A-Z][a-zA-Z0-9]+)$");
-
-            Dictionary<string, SortedDictionary<string, SortedSet<string>>> classList = new Dictionary<string, SortedDictionary<string, SortedSet<string>>>();
 
             while (input != "It's testing time!")
             {
                 
-                MatchCollection matches = regex.Matches(input);
+                MatchCollection matches = validationRegex.Matches(input);
 
                 foreach (Match match in matches)
                 {
-                    if (match.Length > 2)
+                    if (validationRegex.IsMatch(input));
                     {                        
-                        var className = match.Groups[1].ToString();
-                        var methodName = match.Groups[2].ToString();
-                        var unitTestName = match.Groups[3].ToString();
+                        var className = match.Groups[1].Value;
+                        var methodName = match.Groups[2].Value;
+                        var unitTestName = match.Groups[3].Value;
 
-                        if (!classList.ContainsKey(className))
+                        if (!classes.ContainsKey(className))
                         {
-                            classList[className] = new SortedDictionary<string, SortedSet<string>>();
+                            classes[className] = new Dictionary<string, List<string>>();
                         }
 
-                        if (!classList[className].ContainsKey(methodName))
+                        if (!classes[className].ContainsKey(methodName))
                         {
-                            classList[className][methodName] = new SortedSet<string>();
+                            classes[className][methodName] = new List<string>();
                         }
 
-                        if (!classList[className][methodName].Contains(unitTestName))
+                        if (!classes[className][methodName].Contains(unitTestName))
                         {
-                            classList[className][methodName].Add(unitTestName);
+                            classes[className][methodName].Add(unitTestName);
                         }
                     }
                 }                         
@@ -52,23 +52,39 @@
                
             }
 
-            foreach (var units in classList.OrderBy(x => x.Key))
+            Dictionary<string, Dictionary<string, List<string>>> sortedClasess =
+                classes.OrderByDescending(x => x.Value.Values
+                .Sum(y => y.Count))
+                .ThenBy(x => x.Value.Count)
+                .ThenBy(x => x.Key, StringComparer.Ordinal)
+                .ToDictionary(x => x.Key, x => x.Value);
+            
+
+
+            foreach (var classEntry in sortedClasess)
             {
-                var unit = units.Key;
-                
-                Console.WriteLine($"{unit}:");
+                               
+                Console.WriteLine($"{classEntry.Key}:");
 
-                foreach (var methodUnit in units.Value)
+                Dictionary<string, List<string>> sortedMethods =
+                     classEntry.Value.OrderByDescending(m => m.Value.Count)
+                     .ThenBy(m => m.Key, StringComparer.Ordinal)
+                     .ToDictionary(m => m.Key, m => m.Value);
+
+                foreach (var methodEntry in sortedMethods)
                 {
-                    Console.WriteLine($"##{methodUnit.Key}:");
+                    Console.WriteLine($"##{methodEntry.Key}:");
 
-                    foreach (var item in methodUnit.Value)
+                    List<string> sortedUnitTests =
+                        methodEntry.Value.OrderBy(u => u.Length)
+                        .ThenBy(u => u, StringComparer.Ordinal).ToList();
+
+                    foreach (var unitTestEntry in sortedUnitTests)
                     {
-                        Console.WriteLine($"####{string.Join("", methodUnit.Value)}:");
+                        Console.WriteLine($"####{unitTestEntry}");
                     }
                 }
-                   
-
+                               
             }
         }
     }
