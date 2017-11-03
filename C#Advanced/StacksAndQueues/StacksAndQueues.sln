@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01ReverseString", "01ReverseString\01ReverseString.csproj", "{A6913B6A-F466-45AB-9DDA-9FFB52D99C51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02SimpleCalculator", "02SimpleCalculator\02SimpleCalculator.csproj", "{FF37C0FF-A70B-4740-9D5E-7649E88C98A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03DecimaltoBinaryConverter", "03DecimaltoBinaryConverter\03DecimaltoBinaryConverter.csproj", "{E57CA80E-BD28-4E38-802C-A81148178FDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A6913B6A-F466-45AB-9DDA-9FFB52D99C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6913B6A-F466-45AB-9DDA-9FFB52D99C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6913B6A-F466-45AB-9DDA-9FFB52D99C51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF37C0FF-A70B-4740-9D5E-7649E88C98A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF37C0FF-A70B-4740-9D5E-7649E88C98A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF37C0FF-A70B-4740-9D5E-7649E88C98A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF37C0FF-A70B-4740-9D5E-7649E88C98A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E57CA80E-BD28-4E38-802C-A81148178FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E57CA80E-BD28-4E38-802C-A81148178FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E57CA80E-BD28-4E38-802C-A81148178FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E57CA80E-BD28-4E38-802C-A81148178FDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

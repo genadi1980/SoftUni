@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FF37C0FF-A70B-4740-9D5E-7649E88C98A4}</ProjectGuid>
+    <ProjectGuid>{592E3E13-5DFD-4AA8-BE16-47E1ED41E880}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_02SimpleCalculator</RootNamespace>
-    <AssemblyName>02SimpleCalculator</AssemblyName>
+    <RootNamespace>_01TrainingLab</RootNamespace>
+    <AssemblyName>01TrainingLab</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SimpleCalculator.cs" />
+    <Compile Include="TrainingLab.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

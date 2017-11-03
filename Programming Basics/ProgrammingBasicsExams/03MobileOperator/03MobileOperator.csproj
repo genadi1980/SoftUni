@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FF37C0FF-A70B-4740-9D5E-7649E88C98A4}</ProjectGuid>
+    <ProjectGuid>{AB666B0E-BF6C-48D7-9B7A-4888DDB34360}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_02SimpleCalculator</RootNamespace>
-    <AssemblyName>02SimpleCalculator</AssemblyName>
+    <RootNamespace>_03MobileOperator</RootNamespace>
+    <AssemblyName>03MobileOperator</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SimpleCalculator.cs" />
+    <Compile Include="MobileOperator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
