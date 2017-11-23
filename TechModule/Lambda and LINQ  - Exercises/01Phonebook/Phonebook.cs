@@ -16,36 +16,45 @@ namespace _01Phonebook
 
             while (input != "END")
             {
-                var inputLine = input.Split(' ');
+                var inputLine = input.Trim().Split(' ');
                 var commands = inputLine[0];
-                var names = inputLine[1];
+                
                 
 
                 if (commands == "A")
                 {
+                    var names = inputLine[1];
                     var numbers = inputLine[2];
                     if (!phoneBook.ContainsKey(names))
                     {
-                        phoneBook = new Dictionary<string, string>();
+                        phoneBook[names] = null;
                     }
 
                     phoneBook[names] = numbers;
                 }
                 else if (commands == "S")
                 {
+                    var names = inputLine[1];
                     if (phoneBook.ContainsKey(names))
                     {
-
-                        
-
-                         Console.WriteLine("{0} -> {1}", phoneBook.);
-
-                        
-                        
+                        Console.WriteLine("{0} -> {1}", names, phoneBook[names]);
+                                             
+                    }
+                    else
+                    {
+                        Console.WriteLine("Contact {0} does not exist.", names);
                     }
                 }
 
-
+                else if (commands == "ListAll")
+                {
+                    var sortedNames = phoneBook.OrderBy(key => key.Key);
+                   
+                    foreach (var name in sortedNames)
+                    {
+                        Console.WriteLine("{0} -> {1}", name.Key, name.Value);
+                    }
+                }
                 input = Console.ReadLine();
             }
                 
