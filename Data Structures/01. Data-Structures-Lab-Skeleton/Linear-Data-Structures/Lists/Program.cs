@@ -5,9 +5,11 @@
         ArrayList<int> list = new ArrayList<int>();
 
         list.Add(5);
-        list[0] = list[0] + 1;
-        int element = list.RemoveAt(0);
+        list.Add(10);
+        list.Add(3);
 
-
+        list.RemoveAt(2);
+        list.RemoveAt(0);
+      
     }
 }

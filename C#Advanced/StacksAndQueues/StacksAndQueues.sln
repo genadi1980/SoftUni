@@ -1,13 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01ReverseString", "01ReverseString\01ReverseString.csproj", "{A6913B6A-F466-45AB-9DDA-9FFB52D99C51}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02SimpleCalculator", "02SimpleCalculator\02SimpleCalculator.csproj", "{FF37C0FF-A70B-4740-9D5E-7649E88C98A4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03DecimaltoBinaryConverter", "03DecimaltoBinaryConverter\03DecimaltoBinaryConverter.csproj", "{E57CA80E-BD28-4E38-802C-A81148178FDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04MatchingBrackets", "04MatchingBrackets\04MatchingBrackets.csproj", "{4E238AB3-6EEA-49E2-AE61-2B5AAF9A5507}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05HotPotato", "05HotPotato\05HotPotato.csproj", "{19DFB246-3380-4FA9-81A9-75C624B1E4E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06TrafficJam", "06TrafficJam\06TrafficJam.csproj", "{AF79C34D-D30B-48AB-A43A-1339D88957B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +33,18 @@ Global
 		{E57CA80E-BD28-4E38-802C-A81148178FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E57CA80E-BD28-4E38-802C-A81148178FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E57CA80E-BD28-4E38-802C-A81148178FDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E238AB3-6EEA-49E2-AE61-2B5AAF9A5507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E238AB3-6EEA-49E2-AE61-2B5AAF9A5507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E238AB3-6EEA-49E2-AE61-2B5AAF9A5507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E238AB3-6EEA-49E2-AE61-2B5AAF9A5507}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19DFB246-3380-4FA9-81A9-75C624B1E4E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19DFB246-3380-4FA9-81A9-75C624B1E4E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19DFB246-3380-4FA9-81A9-75C624B1E4E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19DFB246-3380-4FA9-81A9-75C624B1E4E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF79C34D-D30B-48AB-A43A-1339D88957B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF79C34D-D30B-48AB-A43A-1339D88957B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF79C34D-D30B-48AB-A43A-1339D88957B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF79C34D-D30B-48AB-A43A-1339D88957B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,6 @@
 ﻿using System;
 
 public class ArrayList<T>
-
 {
     private const int Initial_Capacity = 2;
 
@@ -10,6 +9,7 @@ public class ArrayList<T>
     public ArrayList()
     {
         this.items = new T[Initial_Capacity];
+
     }
 
     public int Count { get; private set; }
@@ -22,7 +22,6 @@ public class ArrayList<T>
             {
                 throw new ArgumentOutOfRangeException();
             }
-
             return this.items[index];
         }
 
@@ -37,13 +36,13 @@ public class ArrayList<T>
         }
     }
 
-    public void Add(T item)
+    public void Add (T item)
     {
         if (this.Count == this.items.Length)
         {
             this.Resize();
         }
-
+        
         this.items[this.Count++] = item;
     }
 
@@ -51,21 +50,20 @@ public class ArrayList<T>
     {
         T[] copy = new T[this.items.Length * 2];
 
-        for (int i = 0; i < this.items.Length; i++)
+        for (int i = 0; i < this.Count; i++)
         {
             copy[i] = this.items[i];
         }
 
         this.items = copy;
     }
-
+     
     public T RemoveAt(int index)
     {
         if (index >= this.Count)
         {
             throw new ArgumentOutOfRangeException();
         }
-
         T element = this.items[index];
         this.items[index] = default(T);
         this.Shift(index);
@@ -82,13 +80,10 @@ public class ArrayList<T>
     private void Shrink()
     {
         T[] copy = new T[this.items.Length / 2];
-
         for (int i = 0; i < this.Count; i++)
         {
             copy[i] = this.items[i];
         }
-
-        this.items = copy;
     }
 
     private void Shift(int index)

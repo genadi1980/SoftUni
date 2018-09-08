@@ -16,6 +16,7 @@ namespace _03DecimaltoBinaryConverter
             if (input == 0)
             {
                 Console.WriteLine(0);
+                return;
             }
             else
             {
