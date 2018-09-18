@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1537092303 source:c:\users\ggeorgiev20\documents\git\softuni\c++\cplusplus-simple-operations-and-calculations\c++taskproject\toyshop.cpp
+	<iostream>
+
+1537205359 source:c:\users\ggeorgiev20\documents\git\softuni\c++\cplusplus-simple-operations-and-calculations\c++taskproject\bonuspoints.cpp
+	<iostream>
+	<iomanip>
+
+1537309314 source:c:\users\ggeorgiev20\documents\git\softuni\c++\cplusplus-simple-operations-and-calculations\c++taskproject\debugfile.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	<cmath>
+
+1537284975 source:c:\users\ggeorgiev20\documents\git\softuni\c++\cplusplus-simple-operations-and-calculations\05time+15 minutes.cpp
+

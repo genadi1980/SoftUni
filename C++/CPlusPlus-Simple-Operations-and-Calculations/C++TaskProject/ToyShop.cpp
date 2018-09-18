@@ -13,7 +13,7 @@ int main() {
 
     toysNumber = puzzels + dolls + bears + minions + trucks;
 
-    if(toysNumber >= 50) {
+    if(toysNumber > 50) {
         sum = sum - sum * 25 /100;
     }
 
@@ -36,3 +36,4 @@ int main() {
 
     return 0;
 }
+
