@@ -1,0 +1,82 @@
+Write a program that filter numbers in vector.
+
+For the program you'll need a function that has 2 params:
+
+ - Vector of Integers
+ - Number to filter (int)
+
+The program should be complete of all instructions !
+
+CODE EXAMPLE :
+
+void FilterNumber( vector<int>myVec, int numberToFilter )
+
+EXAMPLE :
+
+Enter vector size : 
+3
+Enter Number: 
+1
+Enter Number: 
+2
+Enter Number: 
+3
+Enter number to filter :
+2
+Filtered Numbers in vector: 
+1 3 
+Program ended with exit code: 0
+
+EXAMPLE :
+
+Enter vector size : 
+5
+Enter Number: 
+1
+Enter Number: 
+2
+Enter Number: 
+3
+Enter Number: 
+3
+Enter Number: 
+3
+Enter number to filter :
+3
+Filtered Numbers in vector: 
+1 2 
+Program ended with exit code: 0
+
+EXAMPLE : 
+
+Enter vector size : 
+4
+Enter Number: 
+1
+Enter Number: 
+1
+Enter Number: 
+1
+Enter Number: 
+1
+Enter number to filter :
+1
+Filtered Numbers in vector: 
+
+Program ended with exit code: 0
+
+EXAMPLE : 
+
+Enter vector size : 
+3
+Enter Number: 
+1
+Enter Number: 
+2
+Enter Number: 
+3
+Enter number to filter :
+5
+Filtered Numbers in vector: 
+1 2 3 
+Program ended with exit code: 0

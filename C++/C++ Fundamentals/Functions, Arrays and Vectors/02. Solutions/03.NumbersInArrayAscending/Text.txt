@@ -1,0 +1,56 @@
+Write a program, use a function that for given array, filters the numbers in ASCENDING 
+
+The function has 2 params:
+
+- Array of integers
+- arraySize
+
+CODE EXAMPLE:
+
+void SortArray( int array[], const int arraySize )
+
+EXAMPLE:
+
+Enter array size: 
+3
+Enter number: 
+3
+Enter number: 
+2
+Enter number: 
+1
+Array with ascending numbers
+1 2 3 
+Program ended with exit code: 0
+
+EXAMPLE:
+
+Enter array size: 
+4
+Enter number: 
+-2
+Enter number: 
+-1
+Enter number: 
+-4
+Enter number: 
+-5
+Array with ascending numbers
+-5 -4 -2 -1 
+Program ended with exit code: 0
+
+EXAMPLE:
+
+Enter array size: 
+4
+Enter number: 
+2
+Enter number: 
+5
+Enter number: 
+7
+Enter number: 
+4
+Array with ascending numbers
+2 4 5 7 
+Program ended with exit code: 0

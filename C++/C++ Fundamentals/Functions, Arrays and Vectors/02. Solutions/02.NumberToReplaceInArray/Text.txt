@@ -1,0 +1,77 @@
+Write a program that replace a given number with 0.
+
+For the program you'll need a function that has 3 params:
+
+- Array of integers
+- Array Size
+- Number to be replaced
+
+The program should have instructions !
+
+CODE EXAMPLE:
+
+void ReplaceNumber( int array[], const int arraySize, int numToReplace )
+
+EXAMPLE:
+
+Enter array size: 
+3
+Enter number: 
+1
+Enter number: 
+2
+Enter number: 
+3
+Enter number to replace: 
+3
+Replaced number in array: 
+1 2 0 
+Program ended with exit code: 0
+
+EXAMPLE:
+
+Enter array size: 
+4
+Enter number: 
+5
+Enter number: 
+5
+Enter number: 
+5
+Enter number: 
+5
+Enter number to replace: 
+5
+Replaced number in array: 
+0 0 0 0 
+Program ended with exit code: 0
+
+EXAMPLE:
+
+Enter array size: 
+2
+Enter number: 
+1
+Enter number: 
+2
+Enter number to replace: 
+3
+Replaced number in array: 
+1 2 
+Program ended with exit code: 0
+
+EXAMPLE:
+
+Enter array size: 
+3
+Enter number: 
+1
+Enter number: 
+2
+Enter number: 
+2
+Enter number to replace: 
+2
+Replaced number in array: 
+1 0 0 
+Program ended with exit code: 0

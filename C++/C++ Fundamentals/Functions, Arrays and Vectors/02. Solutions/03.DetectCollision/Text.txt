@@ -1,0 +1,38 @@
+01. DETECT COLLISION
+
+Write a program with boolean function, the function should have 4 parameters:
+- x1
+- y1
+- x2
+- y2
+
+( x1, y1 ) - point1
+( x2, y2 ) - point2
+
+While point1 < point2 the program should NOT stop and the user should enter data.
+
+EXAMPLE:
+
+Enter x1: 
+2
+Enter y1: 
+2
+Enter x2: 
+3
+Enter y2: 
+3
+The point1 is NOT inside or after point2 
+Enter x1:
+
+EXAMPLE:
+
+Enter x1: 
+2
+Enter y1: 
+2
+Enter x2: 
+1
+Enter y2: 
+1
+The point1 is inside or after point2 
+Program ended with exit code: 0

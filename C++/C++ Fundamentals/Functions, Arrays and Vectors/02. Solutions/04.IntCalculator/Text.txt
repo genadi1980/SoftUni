@@ -1,0 +1,62 @@
+Write a INT calculator program using function. The function should have 3 params:
+
+- num1
+- sign
+- num2
+
+If you have an invalid sign, the user should know.
+
+Example:
+
+Enter num1 : 
+3
+Enter sign : 
+-
+Enter num2 : 
+2
+The difference is -> 1
+Program ended with exit code: 0
+
+Example:
+
+Enter num1 : 
+5
+Enter sign : 
+-
+Enter num2 : 
+2
+The difference is -> 3
+Program ended with exit code: 0
+
+Example:
+
+Enter num1 : 
+3
+Enter sign : 
+*
+Enter num2 : 
+4
+The product is -> 12
+Program ended with exit code: 0
+
+Example:
+
+Enter num1 : 
+5
+Enter sign : 
+/
+Enter num2 : 
+2
+The division is -> 2
+Program ended with exit code: 0
+
+Example:
+
+Enter num1 : 
+2
+Enter sign : 
+@
+Enter num2 : 
+2
+INVALID SIGN !
+Program ended with exit code: 0

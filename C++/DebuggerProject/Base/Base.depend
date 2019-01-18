@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1542370134 source:c:\users\ggeorgiev20\documents\git\softuni\c++\debuggerproject\base\main.cpp
+	<array>
+	<iostream>
+	<iomanip>
+
