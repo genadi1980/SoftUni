@@ -1,0 +1,33 @@
+#ifndef  COMOPANY_H
+
+#include <string>
+#include <ostream>
+#include <istream>
+#include <vector>
+#include <utility>
+
+class Company {
+public: 
+	Company() {}
+
+	Company(int id, std::string name) 
+		: id(id)
+		, name(name) {}
+
+	int getId() const {
+		return this->id;
+	}
+
+	std::string getName() const {
+		return this->name;
+	}
+
+	friend std::istream& operator>>(std::istream& in, Company& company);
+	friend std::ostream& operator<<(std::ostream& out, const Company& company);
+
+private:
+	int id;
+	std::string name;
+};
+#define COMOPANY_H
+#endif // ! COMOPANY_H
