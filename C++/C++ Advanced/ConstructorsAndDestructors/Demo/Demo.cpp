@@ -11,6 +11,8 @@ class IntArray {
 public: 
 	IntArray(int size) : data (new int[size]), size(size) {}
 
+	IntArray(const IntArray & other) {}
+
 	~IntArray() {
 		delete[] this->data;
 	}
@@ -23,6 +25,7 @@ public:
 		return this->data[index];
 	}
 };
+
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 

@@ -1,0 +1,17 @@
+#ifndef AVARAGE_AGGREGATOR_H
+
+#include "Aggregator.h"
+
+class AverageAggregator : public StreamAggregator {
+	int total;
+public:
+	AverageAggregator(std::istream& stream) : StreamAggregator(stream), total(0) {}
+
+	void aggregate(int next) override {
+		StreamAggregator::aggregate(next);
+		this->total += next;
+		this->aggregationResult = this->total / this->getNumAggregated();
+	}
+};
+#define AVARAGE_AGGREGATOR_H
+#endif // !AVARAGE_AGGREGATOR_H

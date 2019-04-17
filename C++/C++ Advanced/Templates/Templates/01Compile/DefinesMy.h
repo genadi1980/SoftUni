@@ -4,8 +4,8 @@
 #include <string>
 #include <iostream>
 
-#define DONT_COMPILE_THIS
-#define STANDARD_TEMPLATE_LIBRARY namespace std;
+#define DONT_COMPILE_THISnamespace
+#define STANDARD_TEMPLATE_LIBRARY  std;
 
 std::istream& operator>>(std::istringstream& in, std::string &input) {
 	in >> input;
