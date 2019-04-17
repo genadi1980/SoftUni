@@ -1,9 +1,9 @@
-// 02Find.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// 03Order.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include "pch.h"
 #include "Company.h"
-#include "Find.h"
+#include "OrderedInserter.h"
 
 #include <iostream>
 #include <vector>
@@ -11,34 +11,23 @@
 
 int main()
 {
-	std::vector<Company*> companies;
+	std::vector<const Company*> companies;
 
+	OrderedInserter inserter { companies };
 	std::string line;
-	while (std::getline(std::cin, line) && line != "end") {
+	while (getline(std::cin, line) && line != "end") {
 		std::istringstream lineIn(line);
 
-		Company* c = new Company();
+		Company * c = new Company();
 		lineIn >> *c;
-		companies.push_back(c);
+		inserter.insert((const Company*) c);
 	}
 
-	std::string searchIdbyInput;
-	std::getline(std::cin, searchIdbyInput);
-	int searchId = stoi(searchIdbyInput);
-
-	Company* companyFindBySearchedId = find(companies, searchId);
-
-	if (companyFindBySearchedId != nullptr) {
-		std::cout << *companyFindBySearchedId << std::endl;
+	for (const Company* companyPtr : companies) {
+		
+		std::cout << *companyPtr << std::endl;
+		delete  companyPtr;
 	}
-	else {
-		std::cout << "[not found]" << std::endl;
-	}
-
-	for ( Company* companiesPtr : companies) {
-		delete companiesPtr;
-	}
-	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

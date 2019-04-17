@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{FCF6E4D1-A443-4FDE-8AC4-BB5A30DEAAAF}</ProjectGuid>
+    <ProjectGuid>{876E24C9-5FEC-40C8-811F-0825494FDFC1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My01TryParse</RootNamespace>
+    <RootNamespace>My03Order</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -151,11 +151,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Company.h" />
+    <ClInclude Include="OrderedInserter.h" />
     <ClInclude Include="pch.h" />
-    <ClInclude Include="TryParse.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="01TryParse.cpp" />
+    <ClCompile Include="03Order.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

@@ -4,6 +4,7 @@
 #include "pch.h"
 #include "TryParse.h"
 
+
 #include <iostream>
 #include <string>
 
@@ -13,31 +14,32 @@ int main()
 	std::string firstInput;
 	std::string secondInput;
 
+	int a = 0; int b = 0;
 	std::cin >> firstInput >> secondInput;
 
-	int a = 0; int b = 0;
+	bool parseA = tryParse(firstInput, a);
+	bool parseB = tryParse(secondInput, b);
 
-	bool parsedA = tryParse(firstInput, a);
-	bool parsedB = tryParse(secondInput, b);
-
-	if (parsedA && parsedB) {
+	if (parseA && parseB) {
 		std::cout << a + b << std::endl;
 	}
 	else {
-		if (parsedA) {
-			std::cout << a;
+		if (parseA) {
+			std::cout << a << std::endl;
 		}
 		else {
 			std::cout << "[error]" << firstInput << std::endl;
 		}
 
-		if (parsedB) {
-			std::cout << b;
+		if (parseB) {
+			std::cout << b << std::endl;
 		}
 		else {
 			std::cout << "[error]" << secondInput << std::endl;
 		}
 	}
+
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
