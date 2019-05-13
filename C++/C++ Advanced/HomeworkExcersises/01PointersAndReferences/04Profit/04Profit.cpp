@@ -1,48 +1,48 @@
-// 04Profits.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// 04Profit.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include "pch.h"
+#include "Company.h"
+#include "ProfitCalculator.h"
+#include "ProfitReport.h"
+
 #include <iostream>
 #include <string>
 #include <sstream>
 #include <vector>
 #include <map>
 
-#include "Company.h"
-#include "ProfitCalculator.h"
-
-#include "ProfitReport.h"
-
-int main() {
-
+int main()
+{
 	using namespace std;
 	vector<Company> companies;
 	string line;
 
 	while (getline(cin, line) && line != "end") {
 		istringstream lineIn(line);
-
 		Company c;
 		lineIn >> c;
 		companies.push_back(c);
 	}
 
-	map<int, ProfitCalculator> profitCalculatorsByCompany;
+	map<int, ProfitCalculator> profitCalculatorByCompany;
 	line = "";
+
 	while (getline(cin, line) && line != "end") {
-		int companyId;		
-		istringstream lineIn(line);		
+		int companyId;
+		istringstream lineIn(line);
 		lineIn >> companyId;
 		ProfitCalculator calculator;
 		lineIn >> calculator;
 
-		profitCalculatorsByCompany[companyId] = calculator;
+		profitCalculatorByCompany[companyId] = calculator;
+	
 	}
 
 	Company* fromInclusive = &companies[0];
 	Company* toInclusive = &companies[companies.size() - 1];
 
-	cout << getProfitReport(fromInclusive, toInclusive, profitCalculatorsByCompany) << endl;
+	cout << getProfitReport(fromInclusive, toInclusive, profitCalculatorByCompany) << endl;
 
 	return 0;
 }

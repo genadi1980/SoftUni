@@ -6,6 +6,7 @@
 #include <sstream>
 
 #include "Company.h"
+#include "CompanyMemoryUtils.h"
 
 typedef unsigned char byte;
 
